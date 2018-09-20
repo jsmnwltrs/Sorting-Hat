@@ -1,5 +1,19 @@
 const nameInput = document.getElementById('inputName');
 const sortButton = document.getElementById('sortButton');
+const sortingButton = document.getElementById('sortingButton');
+const nameForm = document.getElementById('nameForm');
+
+const hideForm = () => {
+    nameForm.style.display = 'none';
+}
+
+hideForm();
+
+sortingButton.addEventListener('click', () => {
+        if (nameForm.style.display === "none") {
+        nameForm.style.display = "block";
+        } 
+});
 
 const printToDom = (string, divId) => {
     document.getElementById(divId).innerHTML += string;
@@ -12,8 +26,7 @@ document.querySelector("body").addEventListener("click", function(event) {
       const cardToExpel = buttonIClicked.parentNode.parentNode;
       cardToExpel.remove();
   }
-})
-};
+})};
 
 const cardBuilder = (name) => {
     let sortingHouse = '';
