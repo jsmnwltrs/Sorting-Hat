@@ -25,6 +25,30 @@ body {
         font-family: WizardOfTheMoon;
 }
 
+.Huffelpuff {
+    background: rgb(214, 214, 2);
+    color: white;
+    border: 5px solid black;
+}
+
+.Slytherin{
+    background: green;
+    color: white;
+    border: 5px solid silver;
+}
+
+.Ravenclaw {
+    background: blue;
+    color: white;
+    border: 5px solid rgb(105, 73, 73);
+}
+
+.Gryffindor{
+    background: rgb(119, 28, 28);
+    color: white;
+    border: 5px solid rgb(196, 142, 5);
+}
+
 #mainHeader{
 font-family: MagicSchoolOne;
 display: flex;
@@ -43,15 +67,15 @@ font-size: 100px;
 
 #sortingButton {
     margin-top: 25px;
-    margin-left: 175px;
+    margin-left: 250px;
 }
 
 #sortButton {
-    margin-left: 125px;
+    margin-left: 130px;
 }
 
 .expelButton{
-    margin-left: 90px;
+    margin-left: 78px;
 }
 
  #nameForm {
