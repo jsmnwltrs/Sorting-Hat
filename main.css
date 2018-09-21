@@ -1,3 +1,70 @@
-body {
-    background-color: teal;
+@font-face {
+    font-family: MagicSchoolOne;
+    src: url(styling/MagicSchoolOne.ttf);
 }
+
+@font-face {
+    font-family: WizardOfTheMoon;
+    src: url(styling/WizardOfTheMoon.ttf);
+}
+
+body {
+    background-image: url(styling/hogwarts.jpg);
+    background-size: 1300px 1000px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.studentCard{
+        background: black;
+        color: white;
+        border: 5px solid white;
+        -moz-border-radius: 100px / 50px;
+        -webkit-border-radius: 100px / 50px;
+        border-radius: 100px / 50px;
+        font-family: WizardOfTheMoon;
+}
+
+#mainHeader{
+font-family: MagicSchoolOne;
+display: flex;
+justify-content: center;
+font-size: 100px;
+}
+
+.jumbotron {
+    background-color: rgba(34, 33, 33, 0.4);
+    border: 8px solid white;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: WizardOfTheMoon;
+    font-size: 20px;
+ }
+
+#sortingButton {
+    margin-top: 25px;
+    margin-left: 175px;
+}
+
+#sortButton {
+    margin-left: 125px;
+}
+
+.expelButton{
+    margin-left: 90px;
+}
+
+ #nameForm {
+    background-color: rgba(34, 33, 33, 0.4);
+    border: 5px solid white;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: WizardOfTheMoon;
+    font-size: 30px;
+ }
+
+ .nameLabel {
+     display: flex;
+     justify-content: center;
+ }
+ 

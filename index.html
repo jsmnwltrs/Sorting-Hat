@@ -11,8 +11,8 @@
 
     <div class='container'>
 
-    <div class="jumbotron">
-            <h1 class="display-4">Welcome to Hogwarts!</h1>
+    <div class="jumbotron mt-3">
+            <h1 id="mainHeader" class="display-4 mb-5">Welcome to Hogwarts!</h1>
             <p class="lead">You're a wizard! 🧙 Sweet! Now that you have knowledge of your power, you can do all sorts
                  of neat tricks to impress your friends! ....Or accidentally blow them up. 💥 You'll need training and 
                  practice to control your abilities. That's where we come in. We are a school devoted to teaching young 
@@ -21,21 +21,22 @@
             <hr class="my-4">
             <p>These days you can almost predetermine what house you will be assigned. Results are 95% accurate! 
                 All we need is your name (which will be used to briefly stalk your social media pages😅).</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button" id="sortingButton">Let's Start Sorting!</a>
+            <a class="btn btn-primary btn-lg w-50" href="#" role="button" id="sortingButton">Let's Start Sorting!</a>
           </div>
 
-
-          <form id="nameForm">
+        <div class="d-flex justify-content-center">
+          <form id="nameForm" class="w-50 p-3">
                 <div class="form-group">
-                  <label for="inputName">First Year's Name</label>
+                  <label class="nameLabel" for="inputName">First Year's Name</label>
                   <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name">
                 </div>
-                <button type="submit" class="btn btn-primary" id='sortButton'>Sort!</button>
+                <button type="submit" class="btn btn-primary w-50" id='sortButton'>Sort!</button>
               </form>
+        </div>
 
             </div>
 
-            <div id="studentCards"></div>
+            <div id="studentCards" class="d-flex flex-wrap justify-content-center"></div>
     
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

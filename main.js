@@ -12,7 +12,7 @@ hideForm();
 sortingButton.addEventListener('click', () => {
         if (nameForm.style.display === "none") {
         nameForm.style.display = "block";
-        } 
+        }
 });
 
 const printToDom = (string, divId) => {
@@ -23,8 +23,8 @@ const activateExpel = () => {
 document.querySelector("body").addEventListener("click", function(event) {
   if (event.target.classList.contains('expelButton')) {
     const buttonIClicked = event.target;
-      const cardToExpel = buttonIClicked.parentNode.parentNode;
-      cardToExpel.remove();
+    const cardToExpel = buttonIClicked.parentNode.parentNode;
+    cardToExpel.remove();
   }
 })};
 
@@ -43,16 +43,17 @@ const cardBuilder = (name) => {
         if (randomizer === 4) {
             sortingHouse = 'Ravenclaw'
         };
-    let domString = `<div class="card w-25 m-2">
-        <div class="card-body">
-            <h5 class="card-title">${name}</h5>
-            <h6 class="card-text">${sortingHouse}!</h6>
-            <a href="#" class="btn btn-primary expelButton">Expel!</a>
+    let domString = `<div class="w-25 m-2" style="width: 18rem;">
+        <div class="studentcard">
+            <h5 class="d-flex justify-content-center">${name}</h5>
+            <h6 class="d-flex justify-content-center">${sortingHouse}!</h6>
+            <a href="#" class="btn btn-primary d-flex justify-content-center w-50 expelButton">Expel!</a>
          </div>
      </div>`;
     printToDom(domString, 'studentCards');
     activateExpel();
 }
+
 
 sortButton.addEventListener('click', (e) => {
     e.preventDefault();
