@@ -47,7 +47,7 @@ const cardBuilder = (name) => {
         <div class="studentCard">
             <h4 class="d-flex justify-content-center">${name}</h4>
             <h4 class="d-flex justify-content-center ${sortingHouse}">${sortingHouse}!</h4>
-            <a href="#" class="btn btn-primary d-flex justify-content-center w-50 expelButton">Expel!</a>
+            <a href="#" id="expelButton" class="btn btn-primary d-flex justify-content-center w-50 expelButton">Expel!</a>
          </div>
      </div>`;
     printToDom(domString, 'studentCards');

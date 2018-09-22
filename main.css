@@ -8,21 +8,48 @@
     src: url(styling/WizardOfTheMoon.ttf);
 }
 
+
 body {
-    background-image: url(styling/hogwarts.jpg);
-    background-size: 1300px 1000px;
+    background-image: 
+    url(styling/hogwarts.jpg),
+    url(styling/dining.jpg);
+    
+    background-size: 
+    1400px 1005px,
+    1400px 1005px;
+    
+    background-position-x:
+    0%,
+    100%;
+    
+
+    background-position-y:
+    0%,
+    100%;
+
+
     background-repeat: no-repeat;
     background-color: black;
 }
 
+.houses {
+  width: 25%;
+  height: 50%;
+  margin-top: 50px;
+  margin-left: 35%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .studentCard{
-        background: black;
+        background: rgb(61, 61, 61);
         color: white;
         border: 5px solid white;
         -moz-border-radius: 100px / 50px;
         -webkit-border-radius: 100px / 50px;
         border-radius: 100px / 50px;
         font-family: WizardOfTheMoon;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .Huffelpuff {
@@ -40,7 +67,7 @@ body {
 .Ravenclaw {
     background: blue;
     color: white;
-    border: 5px solid rgb(105, 73, 73);
+    border: 5px solid rgb(117, 93, 93);
 }
 
 .Gryffindor{
@@ -66,7 +93,7 @@ font-size: 100px;
  }
 
 #sortingButton {
-    margin-top: 25px;
+    margin-top: 50px;
     margin-left: 250px;
 }
 
