@@ -15,7 +15,7 @@ body {
     url(styling/dining.jpg);
     
     background-size: 
-    1400px 1005px,
+    1400px 940px,
     1400px 1005px;
     
     background-position-x:
@@ -34,9 +34,9 @@ body {
 
 .houses {
   width: 25%;
-  height: 50%;
+  height: 35%;
   margin-top: 50px;
-  margin-left: 35%;
+  margin-left: 38%;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -52,7 +52,7 @@ body {
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
-.Huffelpuff {
+.Hufflepuff {
     background: rgb(214, 214, 2);
     color: white;
     border: 5px solid black;

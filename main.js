@@ -38,7 +38,7 @@ const cardBuilder = (name) => {
             sortingHouse = 'Slytherin'
         };
         if (randomizer === 3) {
-            sortingHouse = 'Huffelpuff'
+            sortingHouse = 'Hufflepuff'
         };
         if (randomizer === 4) {
             sortingHouse = 'Ravenclaw'
