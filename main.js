@@ -38,16 +38,16 @@ const cardBuilder = (name) => {
             sortingHouse = 'Slytherin'
         };
         if (randomizer === 3) {
-            sortingHouse = 'Huffelpuff'
+            sortingHouse = 'Hufflepuff'
         };
         if (randomizer === 4) {
             sortingHouse = 'Ravenclaw'
         };
-    let domString = `<div class="w-25 m-2" style="width: 18rem;">
-        <div class="studentcard">
-            <h5 class="d-flex justify-content-center">${name}</h5>
-            <h6 class="d-flex justify-content-center">${sortingHouse}!</h6>
-            <a href="#" class="btn btn-primary d-flex justify-content-center w-50 expelButton">Expel!</a>
+    let domString = `<div class="w-25 m-4" style="width: 18rem;">
+        <div class="studentCard">
+            <h4 class="d-flex justify-content-center">${name}</h4>
+            <h4 class="d-flex justify-content-center ${sortingHouse}">${sortingHouse}!</h4>
+            <a href="#" id="expelButton" class="btn btn-primary d-flex justify-content-center w-50 expelButton">Expel!</a>
          </div>
      </div>`;
     printToDom(domString, 'studentCards');
