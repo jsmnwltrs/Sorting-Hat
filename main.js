@@ -2,6 +2,7 @@ const nameInput = document.getElementById('inputName');
 const sortButton = document.getElementById('sortButton');
 const sortingButton = document.getElementById('sortingButton');
 const nameForm = document.getElementById('nameForm');
+let sortingHouse = '';
 
 const hideForm = () => {
     nameForm.style.display = 'none';
@@ -28,8 +29,7 @@ document.querySelector("body").addEventListener("click", function(event) {
   }
 })};
 
-const cardBuilder = (name) => {
-    let sortingHouse = '';
+const houseRandomizer = () => {
     let randomizer = Math.floor((Math.random() * 4) + 1);
         if (randomizer === 1) {
             sortingHouse = 'Gryffindor'
@@ -43,6 +43,10 @@ const cardBuilder = (name) => {
         if (randomizer === 4) {
             sortingHouse = 'Ravenclaw'
         };
+}
+
+const cardBuilder = (name) => {
+    houseRandomizer();
     let domString = `<div class="w-25 m-4" style="width: 18rem;">
         <div class="studentCard">
             <h4 class="d-flex justify-content-center">${name}</h4>
@@ -56,7 +60,10 @@ const cardBuilder = (name) => {
 
 
 sortButton.addEventListener('click', (e) => {
+    if (nameInput.value === ''){
+        alert("Please provide your name.");
+    } else {
     e.preventDefault();
     cardBuilder(nameInput.value);
-});
+}});
 

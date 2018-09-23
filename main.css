@@ -15,7 +15,7 @@ body {
     url(styling/dining.jpg);
     
     background-size: 
-    1400px 940px,
+    1400px 935px,
     1400px 1005px;
     
     background-position-x:
@@ -34,7 +34,7 @@ body {
 
 .houses {
   width: 25%;
-  height: 35%;
+  height: 40%;
   margin-top: 50px;
   margin-left: 38%;
   margin-bottom: 0;
